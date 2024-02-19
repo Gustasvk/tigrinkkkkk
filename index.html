@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Jogo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video id="background-video" loop autoplay muted>
+        <source src="https://cdn.discordapp.com/attachments/1078446770075475978/1203798636157214770/Meme_Do_Tigre_Do_Cheetos_Ta_torcendo_contra_meu_progresso_Completo_Pra_Fazer_Meme.mp4?ex=65d267d8&is=65bff2d8&hm=bb8a157dd4a2613b0d01904bd05b1d2ce5b3d382d83923e3cb6e0e664c593cfa&" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+    <div class="container">
+        <button id="play-button" onclick="startBetting()">Jogar</button>
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img src="caminho/para/sua/imagem.jpg" alt="Imagem Acima dos Números" class="game-image">
+                <div id="box1" class="box"></div>
+                <div id="box2" class="box"></div>
+                <div id="box3" class="box"></div>
+                <p id="win-message"></p>
+                <p id="balance-message"></p>
+                <button id="play-again-button" onclick="playAgain()">Jogar Novamente</button>
+                <div id="bet-section">
+                    <input type="number" id="bet-input" placeholder="Informe sua aposta">
+                    <button id="add-balance" onclick="addBalance()">Adicionar Saldo</button>
+                    <button id="bet-button" onclick="bet()">Apostar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
